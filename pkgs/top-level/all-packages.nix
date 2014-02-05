@@ -6980,6 +6980,8 @@ let
 
   stlport = callPackage ../development/libraries/stlport { };
 
+  stress = callPackage ../tools/misc/stress { };
+
   strigi = callPackage ../development/libraries/strigi { clucene_core = clucene_core_2; };
 
   subtitleeditor = callPackage ../applications/video/subtitleeditor { };
