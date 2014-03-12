@@ -5480,6 +5480,10 @@ let
   };
 
   gtk3 = callPackage ../development/libraries/gtk+/3.x.nix { };
+  #gtk384 = callPackage ../development/libraries/gtk+/3.8.4.nix {
+  #  inherit (gnome3) at_spi2_atk;
+  #};
+  gtk384 = callPackage ../development/libraries/gtk+/3.8.4.nix { };
 
   gtk = pkgs.gtk2;
 
