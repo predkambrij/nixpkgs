@@ -7004,6 +7004,8 @@ let
 
   taglib = callPackage ../development/libraries/taglib { };
 
+  taglib_git = callPackage ../development/libraries/taglib-git { };
+
   taglib_extras = callPackage ../development/libraries/taglib-extras { };
 
   talloc = callPackage ../development/libraries/talloc {
