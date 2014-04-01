@@ -2189,6 +2189,8 @@ let
 
   prey-bash-client = callPackage ../tools/security/prey { };
 
+  processing = callPackage ../applications/graphics/processing { };
+
   projectm = callPackage ../applications/audio/projectm { };
 
   proot = callPackage ../tools/system/proot { };
