@@ -25,7 +25,7 @@
    server admins start using the new version?
 */
 
-assert md5 != "" || sha256 != "";
+#assert md5 != "" || sha256 != "";
 
 stdenv.mkDerivation {
   inherit name;
