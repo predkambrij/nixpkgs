@@ -246,8 +246,10 @@ in {
     description = "Eclipse Classic";
     sources = {
       "x86_64-linux" = fetchurl {
-          url = http://download.eclipse.org/eclipse/downloads/drops4/R-4.3.1-201309111000/eclipse-SDK-4.3.1-linux-gtk-x86_64.tar.gz;
-          sha256 = "0ncm56ylwxw9z8rk8ccgva68c2yr9yrf1kcr1zkgw6p87xh1yczd";
+          #url = http://download.eclipse.org/eclipse/downloads/drops4/R-4.3.1-201309111000/eclipse-SDK-4.3.1-linux-gtk-x86_64.tar.gz;
+          url = http://www.rcp-vision.com/eclipse/eclipseMirror/technology/epp/downloads/release/kepler/SR2/eclipse-standard-kepler-SR2-linux-gtk-x86_64.tar.gz;
+          #sha256 = "0ncm56ylwxw9z8rk8ccgva68c2yr9yrf1kcr1zkgw6p87xh1yczd";
+          sha1 = "ef3be20a7c9abb05c9208c7796a4a2b79ffacdbb";
         };
       "i686-linux" = fetchurl {
           url = http://download.eclipse.org/eclipse/downloads/drops4/R-4.3.1-201309111000/eclipse-SDK-4.3.1-linux-gtk.tar.gz;
