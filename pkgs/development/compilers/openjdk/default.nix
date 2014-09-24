@@ -48,6 +48,8 @@ stdenv.mkDerivation rec {
 
   NIX_LDFLAGS = "-lfontconfig -lXcursor -lXinerama";
 
+
+#sed -i '/grant {/a permission java.net.SocketPermission "localhost:1527", "listen";' openjdk*/jdk/src/share/lib/security/java.policy
   postUnpack = ''
     sed -i -e "s@/usr/bin/test@${coreutils}/bin/test@" \
       -e "s@/bin/ls@${coreutils}/bin/ls@" \
