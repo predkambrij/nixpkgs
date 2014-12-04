@@ -32,6 +32,8 @@ stdenv.mkDerivation {
     sha256 = if stdenv.system == "x86_64-linux"
                then "1fz5xn69vapfw8d20207zr9p5r1h9x5kahh334pl2dn1h8il0sm8"
                else "1kmsvvg2lh881rzy3rxbigzivixjamyrwf5x7vmn1kzhvsvifrng";
+               #then "a86a402382c136412f190342354b4f30e47253fe0708201ae2eeaa9d8cede5bb"
+               #else "1z4q8nzl90snb03ywk0cp64nv3cgasj9fvbcw2d4bgl2zlgwzpy9";
   };
 
   # Strip the bundled xulrunner
