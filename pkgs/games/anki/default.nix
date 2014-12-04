@@ -16,6 +16,8 @@ stdenv.mkDerivation rec {
         "http://ankisrs.net/download/mirror/archive/${name}.tgz"
       ];
       sha256 = "0bxy4pq9yq78g0ffnlkpqj91ri0w4xqgv8mqksddn02v4llrd5jb";
+      #url = "http://ankisrs.net/download/mirror/${name}.tgz";
+      #sha256 = "4b969629255b00db9a9eb8a2fd70271cc41c92c47752eb1c78e8609ff025be2f";
     };
 
     pythonPath = [ pyqt4 py.pysqlite py.sqlalchemy py.pyaudio ]
