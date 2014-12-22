@@ -15,7 +15,7 @@ stdenv.mkDerivation rec {
   #};
   src = fetchgit {
     url = "https://github.com/rg3/youtube-dl.git";
-    rev = "fb17b60811ea89fb857ab03a997d193898046466";
+    rev = "1362bbbb4bfbd9380211a66032dbe3fe09aa2173"; #"fb17b60811ea89fb857ab03a997d193898046466";
   };
   buildInputs = [ python haskellPackages.pandoc];
   nativeBuildInputs = [ zip haskellPackages.pandoc];
