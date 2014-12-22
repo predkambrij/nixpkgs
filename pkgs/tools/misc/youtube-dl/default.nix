@@ -24,9 +24,9 @@ stdenv.mkDerivation rec {
   ##nativeBuildInputs = [ zip pandoc ];
 
     #sed -i 's/pandoc/#pandoc/g' Makefile
-  patchPhase = ''
-    rm youtube-dl
-  '';
+  #patchPhase = ''
+  #  rm youtube-dl
+  #'';
 
   configurePhase = ''
     makeFlagsArray=( PREFIX=$out SYSCONFDIR=$out/etc PYTHON=${python}/bin/python )
