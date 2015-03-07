@@ -10,12 +10,15 @@
 with stdenv.lib;
 
 stdenv.mkDerivation rec {
+  #version = "1.3.1";
   version = "1.4.3";
   name = "tigervnc-${version}";
 
   src = fetchurl {
     url = "https://github.com/TigerVNC/tigervnc/archive/v${version}.tar.gz";
     sha256 = "0938fmlll1vxccc65hdhzdxii7c1v65n2nbgizjddprj5gdh69hb";
+    #sha256 = "161bhibic777g47lbjgdnvjhkkdzxrzmxz9rw9sim3q0gcbp0vz3";
+    #sha256 = "0b2603db2b32dfd6e48f6f59618bd9819d187bfbb0c16218637d074a69756824";
   };
 
   inherit fontDirectories;
