@@ -263,8 +263,9 @@ in {
     description = "Eclipse Classic";
     sources = {
       "x86_64-linux" = fetchurl {
-          url = http://download.eclipse.org/eclipse/downloads/drops4/R-4.4-201406061215/eclipse-SDK-4.4-linux-gtk-x86_64.tar.gz;
-          sha256 = "14hdkijsjq0hhzi9ijpwjjkhz7wm0pry86l3dniy5snlh3l5bsb2";
+          #url = http://download.eclipse.org/eclipse/downloads/drops4/R-4.4-201406061215/eclipse-SDK-4.4-linux-gtk-x86_64.tar.gz;
+          url = http://ftp.acc.umu.se/mirror/eclipse.org/technology/epp/downloads/release/luna/SR2/eclipse-java-luna-SR2-linux-gtk-x86_64.tar.gz;
+          sha256 = "b9fd38fb205ed0651e8e5629a3f5b248f2ceb3353814393782be9086e946488f";
         };
       "i686-linux" = fetchurl {
           url = http://download.eclipse.org/eclipse/downloads/drops4/R-4.4-201406061215/eclipse-SDK-4.4-linux-gtk.tar.gz;
