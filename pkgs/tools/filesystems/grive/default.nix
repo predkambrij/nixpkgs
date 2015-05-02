@@ -2,10 +2,11 @@
 
 stdenv.mkDerivation rec {
   version = "0.3.0";
-  name = "grive-${version}";
+  name = "grive-${version}-test";
 
   src = fetchgit {
     url = "https://github.com/Grive/grive.git";
+    #rev = "27817e835fe115ebbda5410ec904aa49a2ad01f1";
     rev = "51e42914f3666ee6e0bc16a4c78f60b117265c24";
     sha256 = "f2b978cc93a2d16262c7b78c62019b2a58044eaef4ca95feaa74dfd4dfcbfa36";
   };

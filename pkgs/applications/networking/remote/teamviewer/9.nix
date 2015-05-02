@@ -11,7 +11,9 @@ stdenv.mkDerivation {
   name = "teamviewer-9.0.32150";
   src = fetchurl {
     url = config.teamviewer9.url or "http://download.teamviewer.com/download/version_9x/teamviewer_linux_x64.deb";
+    #url = config.teamviewer9.url or "http://download.teamviewer.com/download/version_10x/teamviewer_linux_x64.deb";
     sha256 = config.teamviewer9.sha256 or "0wpwbx0xzn3vlzavszxhfvfcaj3pijlpwvlz5m7w19mb6cky3q13";
+    #sha256 = config.teamviewer9.sha256 or "b89da35c6c51390d9bb2edd2ba95d147cf3ba469e18eaee9a6f8986c2a6740f4";
   };
 
   buildInputs = [ makeWrapper patchelf ];
