@@ -8318,17 +8318,8 @@ let
   };
 
   linux_3_18 = makeOverridable (import ../os-specific/linux/kernel/linux-3.18.nix) {
-  linux_3_17 = makeOverridable (import ../os-specific/linux/kernel/linux-3.17.nix) {
+  #linux_3_17 = makeOverridable (import ../os-specific/linux/kernel/linux-3.17.nix) {
   #linux_3_13 = makeOverridable (import ../os-specific/linux/kernel/linux-3.13.nix) {
-  #  inherit fetchurl stdenv perl buildLinux;
-  #  kernelPatches = lib.optionals ((platform.kernelArch or null) == "mips")
-  #    [ kernelPatches.mips_fpureg_emu
-  #      kernelPatches.mips_fpu_sigill
-  #      kernelPatches.mips_ext3_n32
-  #    ];
-  #};
-
-  #linux_3_14 = makeOverridable (import ../os-specific/linux/kernel/linux-3.14.nix) {
     inherit fetchurl stdenv perl buildLinux;
     kernelPatches = lib.optionals ((platform.kernelArch or null) == "mips")
       [ kernelPatches.mips_fpureg_emu
@@ -8336,6 +8327,15 @@ let
         kernelPatches.mips_ext3_n32
       ];
   };
+
+  #linux_3_14 = makeOverridable (import ../os-specific/linux/kernel/linux-3.14.nix) {
+  #  inherit fetchurl stdenv perl buildLinux;
+  #  kernelPatches = lib.optionals ((platform.kernelArch or null) == "mips")
+  #    [ kernelPatches.mips_fpureg_emu
+  #      kernelPatches.mips_fpu_sigill
+  #      kernelPatches.mips_ext3_n32
+  #    ];
+  #};
 
   linux_3_19 = makeOverridable (import ../os-specific/linux/kernel/linux-3.19.nix) {
     inherit fetchurl stdenv perl buildLinux;
